@@ -1,12 +1,12 @@
 package bartosz.sosnica.strategy.Models;
 
 import bartosz.sosnica.strategy.Implementations.Flying.CantFly;
-import bartosz.sosnica.strategy.Implementations.Quacking.CanQuack;
+import bartosz.sosnica.strategy.Implementations.Quacking.Squeak;
 
 public class Lure extends Duck {
-    
-    public Lure () {
-        quackingInterface = new CanQuack();
+
+    public Lure() {
+        quackingInterface = new Squeak();
         flyingInterface = new CantFly();
     }
 
